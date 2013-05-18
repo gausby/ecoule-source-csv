@@ -17,7 +17,7 @@ The creators of these modules does not have anything to do with the CSV Source f
 
 [node-csv-parser]: https://github.com/wdavidw/node-csv-parser
 [wdavidw]: https://github.com/wdavidw
-[glob]: https://github.com/isaacs/node-glob
+[node-glob]: https://github.com/isaacs/node-glob
 [isaacs]: https://github.com/isaacs
 
 
