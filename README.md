@@ -40,9 +40,9 @@ This is a Source module for the Écoute-engine, and should be included in the so
 ### Configuration
 The configuration passed to the CSV source is an object with the following keys.
 
-    * `title` The title of the source used internally in Écoute.
+  * `title` The title of the source used internally in Écoute.
 
-    * `file` The location of the csv file(s), a glob pattern can be used
+  * `file` The location of the CSV-file(s), a glob pattern can be used.
 
 Further configuration parameters has been planed, and the names of these configuration keys could change in a future release.
 
