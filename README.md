@@ -1,7 +1,7 @@
 CSV Source for Écoute
 =====================
 
-This will be a Source for reading data stored in a Comma-separated values-file, abbreviated CSV, into an [Écoute][ecoute-core]-instance.
+An Écoute source module that reads data stored in a Comma-separated values-file, abbreviated CSV.
 
 [ecoute-core]: https://github.com/gausby/ecoute
 
@@ -24,7 +24,7 @@ The creators of these modules does not have anything to do with the CSV Source f
 ## Usage
 This is a Source module for the Écoute-engine, and should be included in the source section of an Écoute-configuration.
 
-    var Ecoute = require('ecoute),
+    var Ecoute = require('ecoute'),
         csvSource = require('ecoute-source-csv');
 
     var myEcoute({
