@@ -5,8 +5,6 @@ An Écoute source module that reads data stored in a Comma-separated values-file
 
 [ecoute-core]: https://github.com/gausby/ecoute
 
-It is under active development, it has some basic functionality, but additional features has been planed.
-
 This project includes the following third party modules:
 
   * [Node CSV Parser][node-csv-parser] project by [Worms David][wdavidw], [et al.](https://github.com/wdavidw/node-csv-parser#contributors), to do the actual CSV parsing.
@@ -43,6 +41,8 @@ The configuration passed to the CSV source is an object with the following keys.
   * `title` The title of the source used internally in Écoute.
 
   * `file` The location of the CSV-file(s), a glob pattern can be used.
+
+  * `headers` By default the source will use the first line in the CSV-file as the headers, resulting in named key-values in the returned data-object. If an array of strings are passed in, these names will be used as the key-names. If the value is a Boolean *false* it will import the data as lists, the returned data-object will be an object with a single key, `data`, that store the data.
 
 Further configuration parameters has been planed, and the names of these configuration keys could change in a future release.
 

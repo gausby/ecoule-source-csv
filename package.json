@@ -1,6 +1,6 @@
 {
     "name": "ecoute-source-csv",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A source for Écoute that import data from a Comma-separated values-file",
     "author": "Martin Gausby <martin@gausby.dk>",
     "repository": "git@github.com:gausby/ecoute-source-csv.git",

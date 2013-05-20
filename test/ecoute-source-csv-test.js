@@ -42,7 +42,54 @@ buster.testCase('refresh', {
             assert.equals(data, [{foo: 'bar'}]);
             done();
         });
+    },
+    'should parse a csv file with headers': function (done) {
+        var test = new Source();
+        test.files = ['test/assets/with-header.csv'];
+
+        test.refresh(function(err, data) {
+            assert.equals(data.length, 1);
+            assert.defined(data[0].year);
+            assert.defined(data[0].make);
+            done();
+        });
+    },
+    'should parse a csv file without headers': function (done) {
+        var test = new Source({
+            headers: false
+        });
+        test.files = ['test/assets/without-header.csv'];
+
+        test.refresh(function(err, data) {
+            assert.equals(data.length, 3);
+            done();
+        });
+    },
+    'should wrap the returned row from a csv file without headers in the data-key of a wrapping object': function (done) {
+        var test = new Source({
+            headers: false
+        });
+        test.files = ['test/assets/without-header.csv'];
+
+        test.refresh(function(err, data) {
+            assert.defined(data[0].data);
+            done();
+        });
+    },
+    'should accept a custom set of header names in the config': function (done) {
+        var test = new Source({
+            headers: ['color','number','type']
+        });
+        test.files = ['test/assets/without-header.csv'];
+
+        test.refresh(function(err, data) {
+            assert.defined(data[0].color);
+            assert.defined(data[0].number);
+            assert.defined(data[0].type);
+            done();
+        });
     }
+
 });
 
 buster.testCase('initialization', {
