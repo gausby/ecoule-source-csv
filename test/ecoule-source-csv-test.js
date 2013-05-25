@@ -3,8 +3,8 @@
 'use strict';
 
 var buster = require('buster'),
-    Ecoute = require('ecoute'),
-    Source = require('../lib/ecoute-source-csv')
+    Ecoule = require('ecoule'),
+    Source = require('../lib/ecoule-source-csv')
 ;
 
 var assert = buster.assertions.assert;

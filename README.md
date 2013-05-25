@@ -1,9 +1,9 @@
-CSV Source for Écoute
+CSV Source for Écoule
 =====================
 
-An Écoute source module that reads data stored in a Comma-separated values-file, abbreviated CSV.
+An Écoule source module that reads data stored in a Comma-separated values-file, abbreviated CSV.
 
-[ecoute-core]: https://github.com/gausby/ecoute
+[ecoule-core]: https://github.com/gausby/ecoule
 
 This project includes the following third party modules:
 
@@ -11,7 +11,7 @@ This project includes the following third party modules:
 
   * The files are found using the [Glob][node-glob]-module by [Isaac Z. Schlueter][isaacs].
 
-The creators of these modules does not have anything to do with the CSV Source for Écoute-project besides that, please direct all the issues and bugs to the right channels. The bugtracker for this project is located here: [CSV Source for Écoute Issue tracker][bugtracker].
+The creators of these modules does not have anything to do with the CSV Source for Écoule-project besides that, please direct all the issues and bugs to the right channels. The bugtracker for this project is located here: [CSV Source for Écoule Issue tracker][bugtracker].
 
 [node-csv-parser]: https://github.com/wdavidw/node-csv-parser
 [wdavidw]: https://github.com/wdavidw
@@ -20,12 +20,12 @@ The creators of these modules does not have anything to do with the CSV Source f
 
 
 ## Usage
-This is a Source module for the Écoute-engine, and should be included in the source section of an Écoute-configuration.
+This is a Source module for the Écoule-engine, and should be included in the source section of an Écoule-configuration.
 
-    var Ecoute = require('ecoute'),
-        csvSource = require('ecoute-source-csv');
+    var Ecoule = require('ecoule'),
+        csvSource = require('ecoule-source-csv');
 
-    var myEcoute({
+    var myEcoule({
         sources: [
             csvSource({
                 // configration
@@ -38,7 +38,7 @@ This is a Source module for the Écoute-engine, and should be included in the so
 ### Configuration
 The configuration passed to the CSV source is an object with the following keys.
 
-  * `title` The title of the source used internally in Écoute.
+  * `title` The title of the source used internally in Écoule.
 
   * `file` The location of the CSV-file(s), a glob pattern can be used.
 
@@ -90,4 +90,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[bugtracker]: https://github.com/gausby/ecoute-source-csv/issues
+[bugtracker]: https://github.com/gausby/ecoule-source-csv/issues
